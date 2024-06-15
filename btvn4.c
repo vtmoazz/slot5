@@ -32,13 +32,13 @@ int checkISBN(long long m){
 			l[i]=m%10;
  			m=m/10;
 		}
- 	sum=sum+l[10];
+ 		sum=sum+l[10];
  	
- 	for( i=1;i<10;i++){
- 		s[i]=c[i-1]*l[i];
- 		sum=sum+s[i];
- 	}
- 	if(sum%11==0)
+ 		for( i=1;i<10;i++){
+ 			s[i]=c[i-1]*l[i];
+ 			sum=sum+s[i];
+ 		}
+ 		if(sum%11==0)
 			result=1;
  	}
  return result;
